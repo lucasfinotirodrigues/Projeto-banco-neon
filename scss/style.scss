@@ -1,0 +1,77 @@
+// RESET CSS
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border:none;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+}
+
+// Mixins
+
+@mixin flex($direction,$align, $justify){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@include resposive($screnWidth){
+    @media(max-width: $screenWidth){
+
+    }
+}
+
+// Grid
+
+.container{
+    width: 100%;
+    max-width: 124.6rem;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+// Constantes
+
+// Escala de azuis
+
+$brand-blue: #0073CE;
+$brand-light-blue: #00A5F0;
+$brand-green-light: #00D7D7;
+$brand-yellow: #FFC800;
+
+// Escala de cinzas
+
+$gray-600:#33303E ;
+$gray-500: #4E4B59;
+$gray-400: #5F5C6B;
+$gray-300:#7A7786 ;
+$gray-200:#C6C5CE ;
+$gray-100: #F1F0F5;
+
+// Importanto as fontes
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
