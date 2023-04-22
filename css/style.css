@@ -3,7 +3,160 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 
+:root {
 
-h2{
+    /* Escala de azuis */
+
+    --brand-blue: #0073CE;
+    --brand-light-blue: #00A5F0;
+    --brand-green-light: #00D7D7;
+    --brand-yellow: #FFC800;
+
+    /* Escala de cinzas */
+
+    --gray-600: #33303E;
+    --gray-500: #4E4B59;
+    --gray-400: #5F5C6B;
+    --gray-300: #7A7786;
+    --gray-200: #C6C5CE;
+    --gray-100: #F1F0F5;
+}
+
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+h1,
+h2 {
+    color: var(--gray-500);
+    line-height: 112%;
+    letter-spacing: -1px;
+}
+
+h3,
+h4 {
+    letter-spacing: -0.5px;
+    color: var(--gray-500);
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 64px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 24px;
+    font-size: 24px;
+    line-height: 150%;
+
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 112%;
+}
+
+/*Estilizações dos botões*/
+
+.btn-primary, .btn-secondary{
+    display: inline-block;
+    line-height: 48px;
+    padding: 0 26px;
+    border-radius: 122px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn-primary {    
+    background-color: var(--brand-yellow);    
+    color: #855B35;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover{
+    background-color: #FFDC5C;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 1px solid #00A5F0;   
+    color: var(--brand-light-blue);
+    transition: all 0.3s;
+}
+
+.btn-secondary:hover{
+    background-color: var(--brand-light-blue);
+    color: #fff;
+}
+
+.btn-secondary-white{
+    display: inline-block;
+    line-height: 48px;
+    padding: 0 26px;
+    border-radius: 122px;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid #fff;   
+    color: #fff;
+    transition: all 0.3s;
+}
+.btn-secondary-white:hover{
+    background-color: #fff;
+    color: var(--brand-light-blue)
+}
+
+/* Estilizações dos cards de depoimentos */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card-depoimentos {
+    width: 100%;
+    max-width: 384px;
+    height: 209px;
+    background-color: #f1f0f585;
+    border-radius: 8px;
+    padding: 37px 32px 23px 32px;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 21px;
+}
+
+strong {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 112%;
+    letter-spacing: -1px;
+    color: var(--gray-500)
+}
+
+.comentario {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--gray-400);
+}
+
+body{
+    background-color: #000;
 }

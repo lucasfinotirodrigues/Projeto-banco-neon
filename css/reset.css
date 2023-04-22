@@ -1,0 +1,55 @@
+/* RESET CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Mixins */
+
+@mixin flex($direction, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@include resposive($screnWidth) {
+    @media(max-width: $screenWidth) {}
+}
+
+/* Grid */
+
+.container {
+    width: 100%;
+    max-width: 124.6rem;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* Constantes */
+
